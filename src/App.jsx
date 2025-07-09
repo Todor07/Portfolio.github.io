@@ -75,8 +75,8 @@ function App() {
       <section id="projects">
         <h2>Projects</h2>
         <div className="project">
-          <h3>Project One</h3>
-          <p> - </p>
+        <p> <a href="https://todor07.github.io/ToDoApp/" target="_blank" rel="noopener noreferrer">To Do App</a> </p>
+        <p>  </p>
         </div>
         <div className="project">
           <h3>Project Two</h3>
