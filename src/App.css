@@ -31,11 +31,38 @@ body {
   flex-direction: column;
 }
 
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(100deg, #007bff 0%, #70ffa0 100%);
+  }
+  50% {
+    background: linear-gradient(100deg, #70ffa0 0%, #007bff 100%);
+  }
+  100% {
+    background: linear-gradient(100deg, #007bff 0%, #70ffa0 100%);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 header {
-  background: linear-gradient(100deg, #007bff 0%, #70ffa0 100%);
+  background: linear-gradient(100deg, #007bff, #70ffa0);
+  background-size: 200% 200%;
   color: white;
   text-align: center;
   padding: 3rem 1rem;
+  border-radius: 0 0 24px 24px;
+  animation: gradientMove 8s ease-in-out infinite;
 }
   .header_photo {
   width: 150px;       
@@ -180,6 +207,7 @@ footer {
   background: #181824;
   color: #f7fafc;
   margin-top: 2rem;
+  border-radius: 24px 24px 0 0;
 }
 
 .to-top {
